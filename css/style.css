@@ -1,0 +1,146 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: 'Gilroy';
+    src: url('../fonts/Gilroy-Medium.ttf');
+    font-style: normal;
+    font-weight: normal;
+}
+body {
+    font-family: 'Gilroy';
+}
+h1{
+    text-align: center;
+}
+.but{
+    display: flex;
+    justify-content: center;
+}
+.boxes{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 20px;
+    width: 80%;
+    margin: 100px auto;
+}
+p{
+    font-size: 13px;
+    color: rgb(174, 174, 174);
+}
+.box{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 4px;
+    overflow: hidden;
+    border: 1px solid black;
+}
+.cent{
+    width: 100%;
+    padding: 30px;
+    background-color: black;
+    color: white;
+}
+h3{
+    font-size: 30px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.img{
+    width: 100%;
+    display: flex;
+    padding: 20px;
+    justify-content: center;
+}
+.row{
+    margin-top: 10px;
+    display: flex;
+}
+.doll{
+    margin-right: 15px;
+    font-size: 28px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.send{
+    background-color: white;
+    text-align: center;
+    color: black;
+    padding: 17px;
+    margin-top: 20px;
+    border-radius: 7px;
+    border: none;
+    width: 100%;
+}
+img{
+    width: 100%;
+    max-height: 200px;
+    height: 200px !important;
+    object-fit: contain;
+}
+.thecart {
+    width: 30px;
+    left: 140px;
+    top: -50px;
+    position: fixed;
+}
+.sended {
+    background: blue;
+    color: #fff;
+    transition: ease .2s;
+}
+.but {
+    display: flex;
+    grid-gap: 10px;
+}
+.slice, .showAll{
+    background: #fff;
+    border: 1px solid #000;
+    border-radius: 5px;
+    width: 170px;
+    padding: 7px;
+}
+.modal {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    /* display: flex; */
+    align-items: center;
+    justify-content: center;
+    display: none;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    opacity: 0.8;
+    z-index: 0;
+}
+.modal-window{
+    position: relative;
+    z-index: 100;
+    width: 1440px;
+    height: 100%;
+    border-radius: 10px;
+    box-shadow: 0 10px 15px rgba(0,0,0, .9);
+    background: #fff;
+}
+.carts {
+    overflow: scroll;
+    max-height: 100vh;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.carts .box {
+    max-width: 300px;
+}
